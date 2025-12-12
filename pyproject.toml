@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-agent-scheduler"
+version = "0.1.0"
+description = "Privacy-preserving multi-agent meeting negotiation with LangGraph: per-person agents, a room agent, and a coordinator that never sees a calendar."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Ingyu Koh"}]
+dependencies = ["langgraph>=1.0,<2", "langchain-core>=1.0,<2", "pydantic>=2.9,<3"]
+
+[project.optional-dependencies]
+anthropic = ["langchain-anthropic>=1.0,<2"]
+dev = ["pytest>=8.3,<10", "ruff>=0.7,<1"]
+
+[project.scripts]
+masched = "masched.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Report table rows read better on one line.
+"src/masched/evals.py" = ["E501"]

@@ -1,0 +1,1477 @@
+{
+  "generated_at": "2026-09-25 23:24 UTC",
+  "scenarios": 40,
+  "feasible": 26,
+  "summary": {
+    "centralized": {
+      "booked_without_conflict": "17/26",
+      "mean_utility_vs_optimum": 1.0,
+      "mean_disclosure": 1.0,
+      "mean_messages": 11.6,
+      "double_bookings": 9,
+      "false_infeasible": 0
+    },
+    "first_fit": {
+      "booked_without_conflict": "17/26",
+      "mean_utility_vs_optimum": 0.831,
+      "mean_disclosure": 0.153,
+      "mean_messages": 110.8,
+      "double_bookings": 9,
+      "false_infeasible": 0
+    },
+    "multi_agent": {
+      "booked_without_conflict": "22/26",
+      "mean_utility_vs_optimum": 0.908,
+      "mean_disclosure": 0.418,
+      "mean_messages": 61.0,
+      "double_bookings": 0,
+      "false_infeasible": 0,
+      "mean_rounds": 4.7,
+      "late_conflicts": 9,
+      "late_conflicts_recovered": 5,
+      "late_conflicts_took_only_feasible_slot": 4
+    }
+  },
+  "rows": [
+    {
+      "scenario": "S01",
+      "people": 5,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.237,
+          "messages": 178,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.533,
+          "messages": 72,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 7,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S02",
+      "people": 5,
+      "duration": 1,
+      "late_conflict": true,
+      "optimum": 17.0,
+      "methods": {
+        "centralized": {
+          "start": 34,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 7,
+          "utility_ratio": 0.647,
+          "disclosure": 0.043,
+          "messages": 36,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 42,
+          "utility_ratio": 0.706,
+          "disclosure": 0.225,
+          "messages": 49,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": true,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S03",
+      "people": 4,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 10,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.257,
+          "messages": 144,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.229,
+          "messages": 40,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 5,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S04",
+      "people": 4,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 13.0,
+      "methods": {
+        "centralized": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 10,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 0.097,
+          "messages": 60,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 0.453,
+          "messages": 55,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 4,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S05",
+      "people": 6,
+      "duration": 3,
+      "late_conflict": true,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 14,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.167,
+          "messages": 140,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.143,
+          "messages": 14,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S06",
+      "people": 5,
+      "duration": 1,
+      "late_conflict": false,
+      "optimum": 17.0,
+      "methods": {
+        "centralized": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 0.13,
+          "messages": 108,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 0.225,
+          "messages": 42,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S07",
+      "people": 2,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 7.0,
+      "methods": {
+        "centralized": {
+          "start": 32,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 6,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 13,
+          "utility_ratio": 0.571,
+          "disclosure": 0.147,
+          "messages": 46,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 32,
+          "utility_ratio": 1.0,
+          "disclosure": 0.24,
+          "messages": 21,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S08",
+      "people": 5,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 16.0,
+      "methods": {
+        "centralized": {
+          "start": 34,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 0,
+          "utility_ratio": 0.438,
+          "disclosure": 0.013,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 34,
+          "utility_ratio": 1.0,
+          "disclosure": 0.24,
+          "messages": 42,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S09",
+      "people": 7,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 16,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.151,
+          "messages": 148,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.271,
+          "messages": 64,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 5,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S10",
+      "people": 2,
+      "duration": 1,
+      "late_conflict": true,
+      "optimum": 7.0,
+      "methods": {
+        "centralized": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 6,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 0.013,
+          "messages": 6,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 2,
+          "utility_ratio": 1.0,
+          "disclosure": 0.225,
+          "messages": 25,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": true,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S11",
+      "people": 3,
+      "duration": 1,
+      "late_conflict": false,
+      "optimum": 9.0,
+      "methods": {
+        "centralized": {
+          "start": 30,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 8,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 30,
+          "utility_ratio": 1.0,
+          "disclosure": 0.188,
+          "messages": 92,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 30,
+          "utility_ratio": 1.0,
+          "disclosure": 0.613,
+          "messages": 58,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 6,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S12",
+      "people": 5,
+      "duration": 1,
+      "late_conflict": false,
+      "optimum": 16.0,
+      "methods": {
+        "centralized": {
+          "start": 64,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 40,
+          "utility_ratio": 0.562,
+          "disclosure": 0.135,
+          "messages": 110,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 40,
+          "utility_ratio": 0.562,
+          "disclosure": 0.325,
+          "messages": 46,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 3,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S13",
+      "people": 5,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 14.0,
+      "methods": {
+        "centralized": {
+          "start": 36,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 36,
+          "utility_ratio": 1.0,
+          "disclosure": 0.173,
+          "messages": 134,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 36,
+          "utility_ratio": 1.0,
+          "disclosure": 0.347,
+          "messages": 49,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 3,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S14",
+      "people": 3,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": 8.0,
+      "methods": {
+        "centralized": {
+          "start": 50,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 8,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 3,
+          "utility_ratio": 0.5,
+          "disclosure": 0.057,
+          "messages": 32,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 50,
+          "utility_ratio": 1.0,
+          "disclosure": 0.257,
+          "messages": 28,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S15",
+      "people": 6,
+      "duration": 1,
+      "late_conflict": false,
+      "optimum": 16.0,
+      "methods": {
+        "centralized": {
+          "start": 30,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 14,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 11,
+          "utility_ratio": 0.75,
+          "disclosure": 0.058,
+          "messages": 58,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 11,
+          "utility_ratio": 0.75,
+          "disclosure": 0.325,
+          "messages": 55,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 3,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S16",
+      "people": 3,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 8,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.395,
+          "messages": 166,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.514,
+          "messages": 40,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 6,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S17",
+      "people": 3,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 11.0,
+      "methods": {
+        "centralized": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 8,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 0.013,
+          "messages": 8,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 0.347,
+          "messages": 38,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 3,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S18",
+      "people": 5,
+      "duration": 1,
+      "late_conflict": true,
+      "optimum": 12.0,
+      "methods": {
+        "centralized": {
+          "start": 45,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 45,
+          "utility_ratio": 1.0,
+          "disclosure": 0.147,
+          "messages": 120,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.787,
+          "messages": 118,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 10,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S19",
+      "people": 5,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 11.0,
+      "methods": {
+        "centralized": {
+          "start": 36,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 9,
+          "utility_ratio": 0.545,
+          "disclosure": 0.04,
+          "messages": 32,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 36,
+          "utility_ratio": 1.0,
+          "disclosure": 0.24,
+          "messages": 36,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S20",
+      "people": 4,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 16.0,
+      "methods": {
+        "centralized": {
+          "start": 48,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 10,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 48,
+          "utility_ratio": 1.0,
+          "disclosure": 0.203,
+          "messages": 128,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 48,
+          "utility_ratio": 1.0,
+          "disclosure": 0.453,
+          "messages": 53,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 4,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S21",
+      "people": 6,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 14,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.176,
+          "messages": 148,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.229,
+          "messages": 56,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 5,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S22",
+      "people": 2,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 6.0,
+      "methods": {
+        "centralized": {
+          "start": 59,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 6,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 59,
+          "utility_ratio": 1.0,
+          "disclosure": 0.52,
+          "messages": 164,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 59,
+          "utility_ratio": 1.0,
+          "disclosure": 0.52,
+          "messages": 39,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 5,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S23",
+      "people": 5,
+      "duration": 3,
+      "late_conflict": true,
+      "optimum": 13.0,
+      "methods": {
+        "centralized": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 0.086,
+          "messages": 64,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 23,
+          "utility_ratio": 0.462,
+          "disclosure": 0.371,
+          "messages": 55,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 3,
+          "recovered": true,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S24",
+      "people": 5,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.249,
+          "messages": 174,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.457,
+          "messages": 48,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 5,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S25",
+      "people": 4,
+      "duration": 2,
+      "late_conflict": true,
+      "optimum": 12.0,
+      "methods": {
+        "centralized": {
+          "start": 48,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 10,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 6,
+          "utility_ratio": 0.833,
+          "disclosure": 0.033,
+          "messages": 22,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 26,
+          "utility_ratio": 0.75,
+          "disclosure": 0.24,
+          "messages": 40,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": true,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S26",
+      "people": 4,
+      "duration": 3,
+      "late_conflict": true,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 10,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.275,
+          "messages": 154,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.314,
+          "messages": 30,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 4,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S27",
+      "people": 5,
+      "duration": 2,
+      "late_conflict": true,
+      "optimum": 12.0,
+      "methods": {
+        "centralized": {
+          "start": 32,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 32,
+          "utility_ratio": 1.0,
+          "disclosure": 0.109,
+          "messages": 84,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.707,
+          "messages": 96,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 8,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S28",
+      "people": 5,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.267,
+          "messages": 200,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.72,
+          "messages": 96,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 9,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S29",
+      "people": 2,
+      "duration": 1,
+      "late_conflict": false,
+      "optimum": 6.0,
+      "methods": {
+        "centralized": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 6,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 0.013,
+          "messages": 6,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 0,
+          "utility_ratio": 1.0,
+          "disclosure": 0.225,
+          "messages": 21,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S30",
+      "people": 8,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 18,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.157,
+          "messages": 188,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.733,
+          "messages": 144,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 9,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S31",
+      "people": 5,
+      "duration": 1,
+      "late_conflict": true,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.292,
+          "messages": 234,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.838,
+          "messages": 132,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 12,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S32",
+      "people": 7,
+      "duration": 1,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 16,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.237,
+          "messages": 268,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.912,
+          "messages": 162,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 11,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S33",
+      "people": 7,
+      "duration": 2,
+      "late_conflict": true,
+      "optimum": 18.0,
+      "methods": {
+        "centralized": {
+          "start": 59,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 16,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 59,
+          "utility_ratio": 1.0,
+          "disclosure": 0.208,
+          "messages": 220,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.88,
+          "messages": 142,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 9,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S34",
+      "people": 6,
+      "duration": 2,
+      "late_conflict": true,
+      "optimum": 10.0,
+      "methods": {
+        "centralized": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 14,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 16,
+          "utility_ratio": 1.0,
+          "disclosure": 0.049,
+          "messages": 46,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.28,
+          "messages": 50,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 4,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S35",
+      "people": 7,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 20.0,
+      "methods": {
+        "centralized": {
+          "start": 64,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 16,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 64,
+          "utility_ratio": 1.0,
+          "disclosure": 0.24,
+          "messages": 256,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 64,
+          "utility_ratio": 1.0,
+          "disclosure": 0.453,
+          "messages": 85,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 4,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S36",
+      "people": 4,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": 13.0,
+      "methods": {
+        "centralized": {
+          "start": 35,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 10,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 0,
+          "utility_ratio": 0.769,
+          "disclosure": 0.013,
+          "messages": 10,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 24,
+          "utility_ratio": 0.923,
+          "disclosure": 0.24,
+          "messages": 35,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 2,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S37",
+      "people": 7,
+      "duration": 2,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 16,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.16,
+          "messages": 168,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.48,
+          "messages": 96,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 7,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S38",
+      "people": 5,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": null,
+      "methods": {
+        "centralized": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.223,
+          "messages": 156,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": null,
+          "utility_ratio": null,
+          "disclosure": 0.5,
+          "messages": 60,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 6,
+          "recovered": false,
+          "status": "infeasible"
+        }
+      }
+    },
+    {
+      "scenario": "S39",
+      "people": 5,
+      "duration": 1,
+      "late_conflict": true,
+      "optimum": 12.0,
+      "methods": {
+        "centralized": {
+          "start": 24,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 8,
+          "utility_ratio": 0.833,
+          "disclosure": 0.045,
+          "messages": 38,
+          "double_booked": true,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 8,
+          "utility_ratio": 0.833,
+          "disclosure": 0.325,
+          "messages": 61,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 3,
+          "recovered": true,
+          "status": "booked"
+        }
+      }
+    },
+    {
+      "scenario": "S40",
+      "people": 5,
+      "duration": 3,
+      "late_conflict": false,
+      "optimum": 4.0,
+      "methods": {
+        "centralized": {
+          "start": 32,
+          "utility_ratio": 1.0,
+          "disclosure": 1.0,
+          "messages": 12,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "first_fit": {
+          "start": 32,
+          "utility_ratio": 1.0,
+          "disclosure": 0.103,
+          "messages": 74,
+          "double_booked": false,
+          "false_infeasible": false
+        },
+        "multi_agent": {
+          "start": 32,
+          "utility_ratio": 1.0,
+          "disclosure": 0.314,
+          "messages": 46,
+          "double_booked": false,
+          "false_infeasible": false,
+          "rounds": 3,
+          "recovered": false,
+          "status": "booked"
+        }
+      }
+    }
+  ]
+}
